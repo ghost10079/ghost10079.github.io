@@ -1,12 +1,1274 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>EClipse Cross</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="swiper-4.4.2/dist/css/swiper.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
+<style>
+    body{
+        box-sizing: border-box;
+        margin: 0;
+        }
+        #all{
+            background-color:rgba(0, 0, 0, 0.3);
+            width: 100%;
+            margin-top: 120px;
+            background-image: url("img/背景圖/背景.jpg");
+            background-position: center;
+            background-size: cover;
+
+        }
+        #page1 a{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .navall{
+            background-color: black;
+            width: 100%;
+            padding: 0;
+            
+        
+        }
+        .navbarlogo{
+            height: 100%;
+            height: 120px;
+            width: 100%;
+            padding: 0;
+            position: fixed;
+            top:0;
+             z-index: 999;
+            
+            
+        }
+        .aaa{
+            height: 100%;
+            width: 100%;
+            font-size: 20px;
+            float: left;
+            padding: 0;
+            color: white;
+            background-color: black;
+            
+        }
+        #logo{
+            width: 20%;
+            height: 100%;
+        }
+        .logoA{
+            background-image: url("img/MITSUBISHI MOTORS.jpg");
+            background-position: center;
+            background-size: cover;
+            background-color: rgb(160, 54, 54);
+            width: 180px;
+            height: 120px;
+            margin-right: 40px;
+            padding: 0;
+        }
+        .bbb{
+            color: rgb(119, 12, 12);
+        }
+        #contain{
+            width:100%;
+            padding: 0;
+            
+        }
+        .slideA{
+            width: 100%;
+            margin-bottom: 40px;
+            padding: 0;
+        }
+        #navbar{
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0;
+        }
+        .container{
+            padding: 0;
+            
+        }
+        #page1{
+            background-image: url("img/背景圖/red.png");
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 80px;
+        }
+    
+        
+        /*第二頁*/
+        #page2{
+            padding-top: 30px;
+            background-image: url("img/底圖/底圖.jpg");
+            background-size: cover;
+            background-position: center;
+        
+        }
+        .aboutimg{
+            background-size: cover;
+            background-position: center;
+            max-height: 500px;
+        }
+        #titleA p {
+            background-color: rgba(0, 0,0, 0.3);
+            color: rgb(255, 255, 255);
+            margin-bottom: 0;
+            padding: 10px;
+            font-family: 微軟正黑體;
+        }
+        #page2_h1{
+            font-size: 40px;
+        }
+        #titleA{
+            padding: 0;
+        }
+        /* 第三頁 */
+        #page3{
+            width: 100%;
+            margin-bottom: 50px;
+            padding: 30px;
+            
+        }
+        #page3 h1{
+            margin-bottom: 10px;
+            color: rgb(253, 9, 9);
+            font-size: 40px;
+            
+        }
+        .safe_1{
+            float: left;
+            clear: both;
+            margin-bottom: 50px;
+           
+        }
+        .safe_2{
+            float: right;
+            clear: both;
+            margin-bottom: 50px;
+         
+        }
+        .safe_3{
+            float: left;
+            clear: both;
+            margin-bottom: 50px;
+        }
+        .safe_4{
+            float: right;
+            clear: both;
+            margin-bottom: 50px;
+        }
+        .safe_5{
+            float: left;
+            clear: both;
+            margin-bottom: 50px;
+        }
+        .safe_6{
+            float: right;
+            clear: both;
+            margin-bottom: 50px;
+        }
+        .safe_7{
+            clear: both;
+            margin-bottom: 50px;
+            float: left;
+        }
+        #page3 img{
+            max-width: 500px;
+        }
+        /*第四頁*/
+       #page4{
+           padding-top: 20px;
+           padding-bottom: 30px;
+           margin-top: 50px;
+           background-image: url("img/底圖/底圖4.jpg");
+           background-size: cover;
+           background-position: center;
+       }
+        #page4 img:hover{
+            transform: scale(1.1);
+        }
+        .page4_h1{
+            margin-bottom: 20px;
+            color: rgb(255, 255, 255);
+        }
+        #page4_P{
+            
+            font-size: 18pt;
+            color: rgb(255, 255, 255);
+            font-family: 微軟正黑體;
+        }
+        #title4{
+            margin-top: 20px;
+        }
+        /* 第五頁 */
+        .page5_h1{
+            margin-bottom: 30px;
+            color: rgb(255, 0, 0);
+        }
+        #title5{
+            padding: 0;
+        }
+        #title5 h1{
+            margin-top: 30px;
+            color: rgb(208, 208, 209);
+            font-weight: bold;
+        }
+        #title5 P{
+            font-size: 18pt;
+            color: aliceblue;
+            }
+        #page5 img:hover{
+            transform: scale(1.1);
+        }
+        .page5_space:hover{
+            transform: scale(1.1);
+        }
+        #page5{
+            background-image: url("img/底圖/底圖5.jpg");
+            background-position: center;
+            background-size: cover;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        /* 第六頁 */
+        #page6{
+            padding-top: 30px;
+            background-image: url("img/底圖/底圖6.jpg");
+            background-position: center;
+            padding-bottom: 50px;
+            -moz-background-size: cover;
+            background-size: cover;
+            padding-bottom: 30px;
+
+        }
+        ul{
+            list-style-type: none;  
+            color: rgb(0, 0, 0);
+        }
+        ul li{
+            font-size: 20px;
+            font-family: 微軟正黑體;
+            color: rgb(243, 243, 243);
+            margin-bottom: 10px;
+        }
+        #allchoose{
+            width: 100%;
+            color: rgb(255, 255, 255);
+        }
+        #choose1{
+            background-color: brown;
+            max-width: 300px;
+            min-width:300px;
+            height: 115px;
+            border: solid 1px black;
+            margin-bottom: 15px;;
+            border-radius: 15px;
+         
+     
+        }
+        #choose2{
+            background-color: brown;
+            height: 115px;
+            width: 300px;
+            border: solid 1px black;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+        #choose3{
+            background-color: brown;
+            width: 300px;
+            height: 115px;
+            border: solid 1px black;
+            margin-bottom: 85px;
+            border-radius: 15px;
+        }
+        #page6_h2{
+            margin-top: 15px;
+            margin-left: 15px;
+            font-family:微軟正黑體;
+            color: aliceblue;
+            font-size: 30px;
+        }
+        #page6_span{
+            margin-left: 8px;
+            margin-top: 8px;
+            color: aliceblue;
+        }
+        h3{
+            color: aliceblue;
+            
+        }
+        .hr1{ 
+            height:2px;
+            border:none;
+            border-top:1px solid #555555;
+            width: 400px;
+            margin-left: 0;
+            }
+        .page6_h1 {
+            color:aliceblue;
+        } 
+        /* 第七頁 */
+        #page7{
+            padding-top: 30px;
+            background-image: url("img/底圖/車色底圖.JPG");
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 30px;
+        }
+        .car-clr1{
+            margin-top: 70px;
+        }
+        .car-clr2,.car-clr3,.car-clr4,.car-clr5{
+            display: none;
+        }
+        .page7_h1{
+            color: rgb(0, 0, 0);
+            font-family: 微軟正黑體;
+            font-weight: bold;
+        }
+    /* 車色按鈕 1*/
+.myButton1 {
+	background-color:#c20006;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:10px;
+	font-weight:bold;
+	padding:11px 20px;
+	text-decoration:none;
+    margin-right: 5px;
+}
+.myButton1:hover {
+	background-color:#5cbf2a;
+}
+.myButton1:active {
+	position:relative;
+	top:1px;
+}
+    /* 車色按鈕2 */
+.myButton2 {
+	background-color:#b52226;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:10px;
+	font-weight:bold;
+	padding:11px 20px;
+	text-decoration:none;
+    margin-right: 5px;
+}
+.myButton2:hover {
+	background-color:#5cbf2a;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+    /* 車色按鈕3 */
+.myButton3 {
+	background-color:#323232;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:10px;
+	font-weight:bold;
+	padding:11px 20px;
+	text-decoration:none;
+    margin-right: 5px;
+}
+.myButton3:hover {
+	background-color:#5cbf2a;
+}
+.myButton3:active {
+	position:relative;
+	top:1px;
+}
+    /* 車色按鈕4 */
+.myButton4 {
+	background-color:#898989;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:10px;
+	font-weight:bold;
+	padding:11px 20px;
+	text-decoration:none;
+    margin-right: 5px;
+}
+.myButton4:hover {
+	background-color:#5cbf2a;
+}
+.myButton4:active {
+	position:relative;
+	top:1px;
+}
+    /* 車色按鈕5 */
+.myButton5 {
+	background-color:#e9e9e9;
+	-moz-border-radius:42px;
+	border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#0f0a0a;
+	font-family:Arial;
+	font-size:10px;
+	font-weight:bold;
+	padding:11px 20px;
+	text-decoration:none;
+    
+}
+.myButton5:hover {
+	background-color:#5cbf2a;
+}
+.myButton5:active {
+	position:relative;
+	top:1px;
+}
+  
+
+    
+/* 優質服務據點 */
+    #page9{
+        padding-top: 50px;
+        background-color: aliceblue;
+    }
+    #page9 h4{
+        margin-bottom: 20px;
+    }
+    /* footer */
+    #footer{
+        margin-top: 150px;
+        
+    }
+    /* @media */
+    @media only screen and (max-width: 576px) {
+    #all{
+        margin-top: 80px;
+    }
+    #page1{
+        padding-bottom: 0px;
+    }
+    .logoA{
+        width: 100px;
+        height: 80px;
+    }
+    .navbaricon{
+        margin-right: 15px;
+    }
+    #page2 h1{
+        font-size: 20px;
+        padding-left: 15px;
+    }    
+    #page2 p{
+     font-size: 8px;  
+    }
+    #page3 h1{
+        font-size: 20px;
+    }
+    .page4_h1{
+        font-size: 20px;
+        padding-left: 15px;
+    }
+    #page4 P{
+        font-size: 8px;   
+    }
+    .page5_h1{
+        font-size: 20px;
+    }
+    #title5 H1{
+        font-size: 20px;
+    }
+    #title5 p{
+        font-size: 8px; 
+    }  
+    .page6_h1{
+        font-size: 20px;
+        padding-left: 15px;
+    }
+
+    #page6 li{
+        font-size: 10px;
+    }
+    #page7 h1{
+        font-size: 20px;
+        padding-left: 15px;
+    }
+    #page9 h1{
+        font-size: 25px;
+    }
+    #page9 h4{
+        font-size: 18px;
+    }
+    .page5_space{
+        margin-bottom: 10px;
+        padding: 0px;
+    }
+    #page5{
+        padding: 15px;
+    }
+    #footer{
+        font-size: 10px;
+    }
+    .myButton{
+        padding: 5px;
+        font-size: 10px;
+    }
+    #page6 Ul{
+        font-size: 15px;
+       
+    }
+    ul li{
+        font-size: 8px;
+        
+    } 
+    .hr1{
+        width: 200px;
+    }
+    .myButton1{
+        width: 50px;
+        height: 50px;
+    }
+    .myButton1 span{
+        display: none;
+        font-size: 1px;
+    }
+    .myButton2 span{
+        display: none;
+        font-size: 1px;
+    }
+    .myButton3 span{
+        display: none;
+        font-size: 1px;
+    }
+    .myButton4 span{
+        display: none;
+        font-size: 1px;
+    }
+    .myButton5 span{
+        display: none;
+        font-size: 1px;
+    }
+    .myButton2{
+        width: 50px;
+        height: 50px;
+    }
+    .myButton3{
+        width: 50px;
+        height: 50px;
+    }
+    .myButton4{
+        width: 50px;
+        height: 50px;
+    }
+    .myButton5{
+        width: 50px;
+        height: 50px;
+    }
+    .dealmenu{
+        font-size: 10px;
+        padding-left: 0PX;
+    }
+
+    .safe_1 img{
+            width:280px;
+        }
+        .safe_2 img{
+            width:280px;
+        }
+        .safe_3 img{
+            width:280px;
+        }
+        .safe_4 img{
+            width:280px;
+        }
+        .safe_5 img{
+            width:280px;
+        }
+        .safe_6 img{
+            width:280px;
+        }
+        .safe_7 img{
+            width:280px;
+        }
+ 
+    }
+
+</style>
+
 <body>
-    12313213213
+    <div id="all">
+        <div id="page1">
+            <div class="navbarlogo">
+                <div id="navbar">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark aaa ">
+                        <div class="container">
+                            <div class="logoA"></div>
+                            <button class="navbar-toggler navbaricon" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                <ul class="navbar-nav ">
+                                    <li class="nav-item text-center">
+                                        <a class="nav-link" href="#carouselExampleControls">關於Eclipse Cross</a>
+                                    </li>
+                                    <li class="nav-item text-center">
+                                        <a class="nav-link " href="#page3">安全防護</a>
+                                    </li>
+                                    <li class="nav-item text-center">
+                                        <a class="nav-link " href="#page4">內艙工藝</a>
+                                    </li>
+                                    <li class="nav-item text-center">
+                                        <a class="nav-link " href="#page5">售價規配</a>
+                                    </li>
+                                    <li class="nav-item text-center">
+                                        <a class="nav-link " href="#page6">車色</a>
+                                    </li>
+                                    <li class="nav-item text-center">
+                                        <a class="nav-link " data-toggle="modal" data-target="#exampleModaltrycar" href="#123">預約試乘</a>
+                                    </li>
+                                    <li class="nav-item text-center">
+                                        <a class="nav-link " href="#page9">服務據點</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div id="contain" class="container">
+                <div id="carouselExampleControls" class="carousel slide slideA coverflow" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 Homepage" src="img/封面1-1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 Homepage" src="img/封面2-1.jpg" alt="Second slide">
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第二頁 -->
+        <!-- 標題 -->
+        <div id="page2">
+            <div id="about" class="container">
+                <div id="titleA" class="col-12">
+                    <H1 id="page2_h1">關於Eclipse Cross </H1>
+                    <P>三菱Eclipse Cross承襲Mitsubishi Motors光榮的SUV純正血統，融合Eclipse日蝕的跑格靈魂，日本原裝跑旅Eclipse
+                        Cross以中型SUV的乘坐空間，洗鍊俐落的外型設計，成為市場上率領風潮的Coupe Like
+                        SUV。搭載1.5T缸內直噴渦輪引擎及S-AWC超能全時四輪控制系統，另以科技座艙搭載SDA(Smartphone Link Display Audio)多媒體連結系統、Apple
+                        CarPlay功能與HUD全彩液晶抬頭顯示器，讓運動駕馭與人性科技完美融合。此外，車體設計所提供的安全保障更榮獲全球最具公信力的Euro NCAP測試機構最高五顆星安全評鑑！</P>
+
+                    <p>EclipseCross搭載全面的安全防護系統，讓車主盡情享受駕馭樂趣、自信操控無後顧之憂，配備ACC主動車距控制巡航、FCM主動式智慧煞車輔助、BSW盲點偵測系統、LCA車道變換輔助、LDW車道偏離警示…等21項主動安全配備，並且全車系標配七氣囊，讓行駛安全防護更加面面俱到！具有不凡的外表，同時更重視對安全的堅持，使得Eclipse
+                        Cross的獨特更加無可挑剔。</p>
+
+                    <p>Eclipse Cross 動態流線側身線條與斜背車頂線條設計，呈現爆發力十足的肌肉感造型，充分展現Coupe Like
+                        SUV的獨特外型。高聳的臀部線條結合霸氣昂揚尾燈造型設計，讓車尾線條更具層次。並搭配雙模式電動全景天窗及採用六層噴塗、三次烘烤工序，呈現光彩晶透的日蝕紅Red
+                        Diamond車色，以及代表三菱輝煌歷史與形隨機能設計理念的新一代DYNAMIC SHIELD的車頭設計，透過日本匠藝美學的精神精雕細琢，每一處都為品味獨具的車主帶來驚喜。</p>
+                </div>
+                <!--輪播圖-->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 aboutimg" src="img/關於日蝕/關於日蝕.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 aboutimg" src="img/關於日蝕/關於日蝕-2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 aboutimg" src="img/關於日蝕/關於日蝕-3.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 aboutimg" src="img/關於日蝕/關於日蝕-4.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 第三頁 -->
+        <div id="page3">
+            <div class="container">
+                <H1>安全配備</H1>
+                <div data-aos="fade-up-right" data-aos-duration="3000" class="safe_1"><img w-100 src="img/安全防護/ACC主動車距控制巡航系統.jpg"
+                        alt=""></div>
+                <div data-aos="fade-up-right" data-aos-duration="3000" class="safe_2"><img w-100 src="img/安全防護/AHB智慧型遠光燈系統.jpg"
+                        alt=""></div>
+                <div data-aos="fade-up-right" data-aos-duration="3000" class="safe_3"><img w-100 src="img/安全防護/BSW盲點偵測系統.jpg"
+                        alt=""></div>
+                <div data-aos="fade-up-right" data-aos-duration="3000" class="safe_4"><img w-100 src="img/安全防護/FCM主動式智慧煞車輔助系統.jpg"
+                        alt=""></div>
+                <div data-aos="fade-up-right" data-aos-duration="3000" class="safe_5"><img w-100 src="img/安全防護/LDW車道偏移警示系統.jpg"
+                        alt=""></div>
+                <div data-aos="fade-up-right" data-aos-duration="3000" class="safe_6"><img w-100 src="img/安全防護/養UMS誤加速抑制系統.jpg"
+                        alt=""></div>
+                <div data-aos="fade-up-right" data-aos-duration="3000" class="safe_7"><img w-100 src="img/安全防護/RCTA後方來車警示系統.jpg"
+                        alt=""></div>
+            </div>
+        </div>
+        <div class="clear" style="clear: both;"></div>
+        <!-- 第四頁 -->
+        <div id="page4">
+            <div class="container">
+                <H1 class="page4_h1">內艙工藝</H1>
+                <div class="row">
+                    <div class="col space1">
+                        <img class="w-100" src="img/內艙工藝/水平駕視設計.jpg" alt="">
+                    </div>
+                    <div id="" class="col space2">
+                        <img class="w-100" src="img/內艙工藝/寬敞無壓乘坐空間.jpg" alt="">
+                    </div>
+                    <div id=title4 class="col-12">
+                        <P id="page4_P">後座椅可以前後滑移20公分，創造靈活空間運用。後座椅背8段角度調整，打造最舒適的乘坐感受。透過座椅彈
+                            性調整，可以創造長置物模式以及後座椅全平躺大空間模式。</P>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img class="w-100" id="space" src="img/內艙工藝/長物載裝模式.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <img class="w-100" id="space" src="img/內艙工藝/後座椅全躺平.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <img class="w-100" src="img/內艙工藝/後座椅可前後調整20公分.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第五頁 -->
+        <div id="page5">
+            <div class="container">
+                <H1 class="page5_h1">操控動力</H1>
+                <div class="row">
+                    <div class="col">
+                        <img class="w-100" src="img/操控動力/S-AWC.jpg" alt="">
+                    </div>
+                </div>
+                <div id=title5 class="col-12 justify-content-around">
+                    <H1> S-AWC超能全時四輪控制系統(Super All Wheel Control)</H1>
+                    <p>S-AWC系統整合4WD電子控制四輪傳動系統、ASC車身動態穩定控制系統、AYC主動式偏擺控制系統(Active Yaw Control)以及ABS防鎖定煞車系統。</p>
+                    <p>能在各種路況下掌握四輪的動態表現、兼具隨心所欲的操控與卓越的穩定性，實現我們追求的「駕馭樂趣」與「安心信賴感」。</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-sm-3">
+                        <img class="w-100 page5_space" src="img/操控動力/ABS.jpg" alt="">
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <img class="w-100 page5_space" src="img/操控動力/主動式偏擺.jpg" alt="">
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <img class="w-100 page5_space" src="img/操控動力/車身動態穩定.jpg" alt="">
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <img class="w-100 page5_space" src="img/操控動力/電子控制4WD.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第六頁 -->
+        <div id="page6">
+            <div class="container">
+                <H1 class="page6_h1 ">售價規配</H1>
+                <ul>
+                    <li>●為標準配備</li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col d-flex justify-content-center ">
+                        <div id="choose1" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            <div class="row d-flex justify-content-start">
+                                <h2 id="page6_h2">傳奇型</h2>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <h3>969,000</h3><span id="page6_span">TWD(建議售價)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col d-flex justify-content-center ">
+                        <div id="choose2" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-2">
+                            <div class="row d-flex justify-content-start">
+                                <h2 id="page6_h2">魅力型</h2>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <h3>109,000</h3><span id="page6_span">TWD(建議售價)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col d-flex justify-content-center ">
+                        <div id="choose3" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-3">
+                            <div class="row d-flex justify-content-start">
+                                <h2 id="page6_h2">S-AWC旗艦型</h2>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <h3>116,9000</h3><span id="page6_span">TWD(建議售價)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">傳奇型</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <UL>
+                            <LI>產地:日本</LI>
+                            <LI>引擎型式 : 1.5L DOHC MIVEC 缸內直噴渦輪引擎 </LI>
+                            <LI>排氣量(c.c.) : 1,499</LI>
+                            <LI>最大馬力(ps/rpm) : 163 / 5,500</LI>
+                            <LI>變速系統 : III-智慧型無段變速系統附8速SPORT MO</LI>
+                            <LI>測試值(平均油耗)(km/L) : 14.6</LI>
+                            <hr class="hr1" />
+                            <LI>●鹵素頭燈</LI>
+                            <LI>●LED日間行車燈</LI>
+                            <LI>●LED導光條式尾燈組</LI>
+                            <LI>●前後霧燈</LI>
+                            <LI>●Dynamic Shield 鍍鉻飾條</LI>
+                            <LI>●鍍鉻水箱護罩</LI>
+                            <LI>●前後保桿亮銀下飾板</LI>
+                            <LI>●LED鑽帶方向燈</LI>
+                            <LI>●車側電動摺疊後視鏡附電熱除霧功能</LI>
+                            <LI>●車側輪拱/車門飾板/車側亮銀飾條</LI>
+                            <LI>●鯊魚鰭天線</LI>
+                            <LI>●後擾流尾翼(含隱藏式後雨刷)</LI>
+                            <LI>●車頂行李架</LI>
+                            <LI>●16吋鋁合金輪圈</LI>
+                            <LI>●雙區恆溫空調(附粉塵過濾裝置)</LI>
+                            <LI>●音響系統(支援CD/MP3/WMA/USB/iPod/iPhone連結)</LI>
+                            <LI>●定速巡航系統</LI>
+                            <LI>●光感應自動啟閉頭尾燈 / 雨滴感應式雨刷</LI>
+                            <LI>●車燈熄火自動關閉系統</LI>
+                            <LI>●ECO MODE 節能輔助系統</LI>
+                            <LI>●ECO MODE 節能輔助系統</LI>
+                        </UL>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">魅力型</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <UL>
+                            <LI>產地:日本</LI>
+                            <LI>引擎型式 : 1.5L DOHC MIVEC 缸內直噴渦輪引擎 </LI>
+                            <LI>排氣量(c.c.) : 1,499</LI>
+                            <LI>最大馬力(ps/rpm) : 163 / 5,500</LI>
+                            <LI>變速系統 : III-智慧型無段變速系統附8速SPORT MO</LI>
+                            <LI>測試值(平均油耗)(km/L) : 14.6</LI>
+                            <hr class="hr1" />
+                            <LI>＋雙前座SRS氣囊</LI>
+                            <LI>＋倒車影像</LI>
+                            <LI>＋LED頭燈(附自動水平調整、頭燈清洗器)</LI>
+                            <LI>＋18吋鋁合金輪圈(雙色)</LI>
+                            <LI>＋Smartphone Link Display Audio(SDA)功能 支援Apple CarPlay、藍芽、Hands Free</LI>
+                            <LI>＋SDA觸控板</LI>
+                            <LI>＋7吋薄型觸控液晶顯示幕</LI>
+                            <LI>＋智慧感應鑰匙</LI>
+                            <LI>＋PushStart智慧觸控啟動系統</LI>
+                            <LI>＋Elctric ParkingBrake(EPB)電子式駐煞車附
+                                Auto Hold功能</LI>
+                            <LI>＋雙模式防夾全景天窗(前後獨立控制電動遮陽簾)</LI>
+                            <LI>＋八向電動調整駕駛座椅</LI>
+                            <LI>＋雙前座椅加熱功能</LI>
+                        </UL>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">S-AWC旗艦型</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <UL>
+                            <LI>產地:日本</LI>
+                            <LI>引擎型式 : 1.5L DOHC MIVEC 缸內直噴渦輪引擎 </LI>
+                            <LI>排氣量(c.c.) : 1,499</LI>
+                            <LI>最大馬力(ps/rpm) : 163 / 5,500</LI>
+                            <LI>變速系統 : III-智慧型無段變速系統附8速SPORT MO</LI>
+                            <LI>測試值(平均油耗)(km/L) : 14.6</LI>
+                            <hr class="hr1" />
+                            <LI>＋Head Up Display(HUD)全彩液晶抬頭顯示器</LI>
+                            <LI>＋BlindSpot Warning(BSW)盲區偵測警示系統</LI>
+                            <LI>＋Lane Change Assist(LCA)車道變換輔助系統</LI>
+                            <LI>＋Rear Cross Traffic Alert(RCTA)後方來車警示系統</LI>
+                            <LI>＋Ultrasonic misacceleration Mitigation System(UMS)
+                                誤加速抑制系統</LI>
+                            <LI>＋Rockford Fosgate Premium Sound System
+                                (710W 8聲道獨立擴大機、9喇叭)</LI>
+                        </UL>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL -->
+        <!-- 第七頁 -->
+        <div id="page7">
+            <div class="container">
+                <H1 class="page7_h1 ">車色</H1>
+                <div class="row">
+                    <div class="col-12 car-clr1">
+                        <img class="w-100" src="img/八方位賞車/日蝕紅2.png" alt="">
+                    </div>
+                    <div class="col-12 car-clr2">
+                        <img class="w-100" src="img/八方位賞車/活力紅2.png" alt="">
+                    </div>
+                    <div class="col-12 car-clr3">
+                        <img class="w-100" src="img/八方位賞車/勁活黑2.png" alt="">
+                    </div>
+                    <div class="col-12 car-clr4">
+                        <img class="w-100" src="img/八方位賞車/掠影灰2.png" alt="">
+                    </div>
+                    <div class="col-12 car-clr5">
+                        <img class="w-100" src="img/八方位賞車/珍珠2.png" alt="">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <a  class="col- myButton1"><span>日蝕紅</span></a>
+                        <a  class="col- myButton2"><span>活力紅</span></a>
+                        <a  class="col- myButton3"><span>勁活黑</span></a>
+                        <a class="col- myButton4"><span>掠影灰</span></a>
+                        <a  class="col- myButton5"><span>珍珠白</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 預約試乘 -->
+        <div id="page8">
+            <div class="modal fade" id="exampleModaltrycar" tabindex="-1" role="dialog" aria-labelledby="exampleModaltrycar"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModaltrycar">馬上預約試乘</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="">姓名</label>
+                                    <input type="text" class="form-control" id="" aria-describedby="emailHelp"
+                                        placeholder="">
+                                    <label for="exampleInputEmail1">性別</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>男</option>
+                                        <option>女</option>
+                                    </select>
+                                    <label for="exampleInputEmail1">信箱</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                        placeholder="">
+                                    <label for="exampleInputEmail1">電話</label>
+                                    <input class="form-control" type="text" placeholder="">
+                                    <label for="exampleInputEmail1">選擇試乘地點</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>宜蘭縣</option>
+                                        <option>臺北市</option>
+                                        <option>新北市</option>
+                                        <option>桃園市</option>
+                                        <option>新竹市</option>
+                                        <option>新竹縣</option>
+                                        <option>苗栗縣</option>
+                                        <option>台中市</option>
+                                        <option>彰化縣</option>
+                                        <option>南投縣</option>
+                                        <option>雲林縣</option>
+                                        <option>嘉義市</option>
+                                        <option>臺南市</option>
+                                        <option>高雄市</option>
+                                        <option>屏東縣</option>
+                                        <option>臺東縣</option>
+                                        <option>花蓮縣</option>
+                                    </select>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>請選擇據點</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">送出</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--服務據點 -->
+        <div id="page9">
+            <div class="container d-flex justify-content-center">
+                <h1 class="page9_h1">優質銷售服務據點推薦</h1>
+            </div>
+            <div class="container d-flex justify-content-center">
+                <h4>Best Dealer Recommanded</h4>
+            </div>
+            <!-- 北北基 -->
+            <div class="container">
+                <div class="dropdown">
+                    <div class="list-group">
+                        <btn class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            北北基/宜蘭區
+                        </btn>
+                        <div class="dropdown-menu  container" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item dealmenu">匯豐汽車南基隆所 基隆市安樂區麥金路144號 (02)2432-8282</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車台北所 台北市中山區民族東路97號 (02)2515-7890</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車內湖所 台北市內湖區內湖路一段213號 (02)2658-5709</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車景美所 台北市文山區羅斯福路五段41號 (02)2932-8338</a>
+                            <a class="dropdown-item dealmenu">順益汽車濱江所 台北市濱江街309號 (02)25180699</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車新店所 新北市新店區中興路3段9號 (02)8919-9388</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車中和所 新北市中和區建康路230號 (02)2223-1010</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車三重所 新北市三重區重陽路四段1號 (02)2988-6675</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車三鶯所 新北市三峽區復興路465-1號 (02)2673-1408</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車土城所 新北市土城區中華路一段148號 (02)2265-2277</a>
+                            <a class="dropdown-item dealmenu">順益汽車林口所 新北市林口區文化一路一段17號 (02)26098757</a>
+                            <a class="dropdown-item dealmenu">順益汽車泰山所 新北市泰山區明志路三段523號 (02)29060669</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車板橋所 新北市板橋區文化路二段464號 (02)22525145</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車新莊所 新北市新莊區思源路56號 (02)2991-3338</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車樹林所 新北市樹林區中正路153-1號 (02)2685-2361</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 桃竹苗 -->
+            <div class="container">
+                <div class="dropdown">
+                    <div class="list-group">
+                        <btn class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            桃竹苗區
+                        </btn>
+                        <div class="dropdown-menu container" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item dealmenu">匯豐汽車南崁所 桃園市經國路415號 (03)325-6668</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車桃園所 桃園市文中路627號 (03)379-3151</a>
+                            <a class="dropdown-item dealmenu">順益汽車中壢所 桃園市中壢區中園路158號 (03)4555133</a>
+                            <a class="dropdown-item dealmenu">順益汽車平鎮所 桃園市平鎮區環南路168號 (03)4922225</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車龍潭所 桃園縣龍潭鄉大昌路1段300號 (03)489-9201</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車新竹所 新竹市東區中華路一段257-6號 (03)532-7111</a>
+                            <a class="dropdown-item dealmenu">順益汽車頭份所 苗栗縣頭份鎮自強路二段472號 (037)620001</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車頭份所 苗栗縣頭份鎮中央路628號 (037)695-156</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--中部 -->
+            <div class="container">
+                <div class="dropdown">
+                    <div class="list-group">
+                        <btn class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            中部區
+                        </btn>
+                        <div class="dropdown-menu container" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item dealmenu">順益汽車太平所 台中市太平區太平路726號 (04)22773859</a>
+                            <a class="dropdown-item dealmenu">順益汽車台中所 台中市文心路四段194號 (04)22969797</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車大里所 台中市大里區國光路一段168號 (04)2483-0000</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車沙鹿所 台中市沙鹿區台灣大道七段372號 (04)2632-9777</a>
+                            <a class="dropdown-item dealmenu">順益汽車員林所 彰化縣大村鄉村上村中山路二段3-1號 (04)8523988</a>
+                            <a class="dropdown-item dealmenu">順益汽車草屯所 南投縣草屯鎮成功路一段1179號 (049)2314836</a>
+                            <a class="dropdown-item dealmenu">順益汽車南投所 南投市南崗工業區南崗三路43號 (049)2255266</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車南投所 南投市南崗三路1號 (049)225-6300</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車斗六所 雲林縣斗六市文化路678號 (05)533-3789</a>
+                            <a class="dropdown-item dealmenu">順益汽車斗六所 雲林縣斗六市大學路二段67號 (05)5345091 </a>
+                            <a class="dropdown-item dealmenu">匯豐汽車北港所 雲林北港鎮新德路78號 (05)782-4600</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 嘉南區 -->
+            <div class="container">
+                <div class="dropdown">
+                    <div class="list-group">
+                        <btn class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            嘉南區
+                        </btn>
+                        <div class="dropdown-menu container" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item dealmenu">匯豐汽車嘉義所 嘉義市東區忠孝路730號 (05)277-3100</a>
+                            <a class="dropdown-item dealmenu">順益汽車博愛所 嘉義市博愛路二段548號 (05)2863030</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車東台南所 台南市東區中華東路二段263號 (06)269-8811</a>
+                            <a class="dropdown-item dealmenu">順益汽車安平所 台南市中華西路一段420號 (06)2615138</a>
+                            <a class="dropdown-item dealmenu">順益汽車安南所 台南市海佃路二段174號 (06)2568220</a>
+                            <a class="dropdown-item dealmenu">順益汽車新營所 台南市新營區復興路549之1號 (06)6562711</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車新營所 台南市新營區民治路306號 (06)656-2111</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--高屏區  -->
+            <div class="container">
+                <div class="dropdown">
+                    <div class="list-group">
+                        <btn class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            高屏區
+                        </btn>
+                        <div class="dropdown-menu container" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item dealmenu">匯豐汽車五甲所 高雄市鳳山區瑞隆東路138號 07-763-6999</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車岡山所 高雄市燕巢區安招路1033-2號 (07)616-5611</a>
+                            <a class="dropdown-item dealmenu">順益汽車右昌所 高雄市楠梓區德民路852號 (07)3638220</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車屏東所 屏東市和生路二段110號 (08)752-8301</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車高雄所 高雄市左營區大中一路355號 (07)310-6977</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車楠梓所 高雄市楠梓區軍校路751號 (07)364-6777</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車旗山所 高雄市旗山區中華路1112號 (07)661-7631</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車澄清所 高雄市鳳山區青年路二段321號 (07)777-6016</a>
+                            <a class="dropdown-item dealmenu">匯豐汽車潮州所 屏東縣竹田鄉水源路2-6號 (08)788-1947 </a>
+                            <a class="dropdown-item dealmenu">順益汽車東港所 屏東縣東港鎮大鵬里大潭路120-2號 (08)8320996</a>
+                            <a class="dropdown-item dealmenu">順益汽車潮州所 屏東縣潮州鎮潮州路41號 (08)7801222 </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 東部區 -->
+            <div class="container">
+                <div class="dropdown">
+                    <div class="list-group">
+                        <btn class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            東部區
+                        </btn>
+                        <div class="dropdown-menu container" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item dealmenu">匯豐汽車羅東所 宜蘭縣五結鄉中正路二段21號 (03)965-8111</a>
+                            <a class="dropdown-item dealmenu">順益汽車花蓮所 花蓮縣吉安鄉建國路一段197號 (03)8568-121</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="container d-flex justify-content-center">
+                <h6 id="footer">Copyright©mitsubishi-motors Taiwan.All rights reserved</h6>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <script src="swiper-4.4.2/dist/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- jquery -->
+    <script>
+        $("myButton1").click(function () {
+            $("car-clr1").display:block();
+        });
+        $("myButton2").click(function () {
+            $("car-clr2").display:block();
+        });
+        src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    </script>
 </body>
+
 </html>
