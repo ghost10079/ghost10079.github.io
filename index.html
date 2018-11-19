@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="swiper-4.4.2/dist/css/swiper.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/page6.css">
 </head>
 
 <style>
@@ -43,7 +44,7 @@
             padding: 0;
             position: fixed;
             top:0;
-             z-index: 999;
+            z-index: 999;
             
             
         }
@@ -253,7 +254,7 @@
         ul li{
             font-size: 20px;
             font-family: 微軟正黑體;
-            color: rgb(27, 18, 18);
+            color: rgb(243, 243, 243);
             margin-bottom: 10px;
         }
         #allchoose{
@@ -325,6 +326,12 @@
             margin-top: 70px;
         }
         .car-clr2,.car-clr3,.car-clr4,.car-clr5{
+            display: none;
+        }
+        .car-color-on{
+display: block!important;
+        }
+        .car-color-off{
             display: none;
         }
         .page7_h1{
@@ -999,20 +1006,8 @@
             <div class="container">
                 <H1 class="page7_h1 ">車色</H1>
                 <div class="row">
-                    <div class="col-12 car-clr1">
-                        <img class="w-100" src="img/八方位賞車/日蝕紅2.png" alt="">
-                    </div>
-                    <div class="col-12 car-clr2">
-                        <img class="w-100" src="img/八方位賞車/活力紅2.png" alt="">
-                    </div>
-                    <div class="col-12 car-clr3">
-                        <img class="w-100" src="img/八方位賞車/勁活黑2.png" alt="">
-                    </div>
-                    <div class="col-12 car-clr4">
-                        <img class="w-100" src="img/八方位賞車/掠影灰2.png" alt="">
-                    </div>
-                    <div class="col-12 car-clr5">
-                        <img class="w-100" src="img/八方位賞車/珍珠2.png" alt="">
+                    <div class="col-12">
+                        <img class="w-100 car-clr1" src="img/八方位賞車/日蝕紅2.png" alt="">
                     </div>
                 </div>
                 <div class="container">
@@ -1260,14 +1255,24 @@
         AOS.init();
     </script>
     <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $("myButton1").click(function () {
-            $("car-clr1").display:block();
-        });
-        $("myButton2").click(function () {
-            $("car-clr2").display:block();
-        });
-        src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    $(".myButton1").click(function(){
+      $(".car-clr1").attr("src","img/八方位賞車/日蝕紅2.png");
+    });
+
+    $(".myButton2").click(function(){
+      $(".car-clr1").attr("src","img/八方位賞車/活力紅2.png");
+    });
+    $(".myButton3").click(function(){
+      $(".car-clr1").attr("src","img/八方位賞車/勁活黑2.png");
+    });
+    $(".myButton4").click(function(){
+      $(".car-clr1").attr("src","img/八方位賞車/掠影灰2.png");
+    });
+    $(".myButton5").click(function(){
+      $(".car-clr1").attr("src","img/八方位賞車/珍珠2.png");
+    });
     </script>
 </body>
 
