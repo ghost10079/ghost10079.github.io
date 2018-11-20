@@ -659,7 +659,7 @@ display: block!important;
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark aaa ">
                         <div class="container">
                             <div class="logoA"></div>
-                            <button class="navbar-toggler navbaricon navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                            <button class="navbar-toggler navbaricon navbar-toggle navbar a" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
@@ -1282,6 +1282,16 @@ display: block!important;
     </script>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <Script>
+    $(function(){ 
+    if($(window).width()<768){ //當視窗小於480時才運作
+    $('.navbar a').on('click', function(){
+    $('.navbar-toggle').click();
+              });
+            }
+            });
+    </Script>
+    <!-- 切換圖片 -->
     <script>
     $(".myButton1").click(function(){
       $(".car-clr1").attr("src","img/八方位賞車/日蝕紅2.png");
